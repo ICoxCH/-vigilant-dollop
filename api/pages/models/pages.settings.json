@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "home_pages",
+  "collectionName": "pages",
   "info": {
-    "name": "home-page"
+    "name": "Pages"
   },
   "options": {
     "increments": true,
@@ -10,8 +10,9 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "page_content": {
-      "type": "richtext"
+    "main_content": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
