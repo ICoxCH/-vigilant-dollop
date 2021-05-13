@@ -3,16 +3,16 @@ FROM strapi/base
 WORKDIR /strapi-app
 
 COPY ./package.json ./
-COPY ./yarn.lock ./
+COPY ./package-lock.json ./
 
-RUN yarn install
+RUN npm ci
 
 COPY . .
 
 ENV NODE_ENV development
 
-RUN yarn build
+RUN npm run build
 
 EXPOSE 1337
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
