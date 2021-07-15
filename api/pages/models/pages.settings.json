@@ -23,14 +23,24 @@
     "template_id": {
       "type": "enumeration",
       "enum": [
-        "layoutOne"
+        "article",
+        "articleWithImage"
       ],
       "required": true,
-      "default": "layoutOne"
+      "default": "article"
     },
     "page_title": {
       "type": "string",
       "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
