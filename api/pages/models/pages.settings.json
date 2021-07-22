@@ -11,10 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "main_content": {
-      "type": "richtext",
-      "required": true
-    },
     "page_id": {
       "type": "string",
       "required": true,
@@ -41,6 +37,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "paragraphs": {
+      "collection": "paragraphs"
     }
   }
 }
