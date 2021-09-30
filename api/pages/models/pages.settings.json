@@ -40,6 +40,9 @@
     },
     "paragraphs": {
       "collection": "paragraphs"
+    },
+    "page_summary": {
+      "type": "richtext"
     }
   }
 }
